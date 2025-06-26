@@ -35,7 +35,7 @@ For information and test datasets on training and quality control of contextual 
         - Nanopore
             - Contains dehosted nanopore fastq files (and possibly fast5 files?) generated using the freed_V2_nml primer scheme for 93 samples and 3 controls
 
-- CDC public dataset repo [git link](https://github.com/CDCgov/datasets-sars-cov-2) / [publication](https://peerj.com/articles/3893/)
+- CDC public dataset repo [git link](https://github.com/CDCgov/datasets-sars-cov-2) / [publication](https://peerj.com/articles/13821/)
     - What's included:
         - QC failures
         - host contamination
