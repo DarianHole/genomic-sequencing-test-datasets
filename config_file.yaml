@@ -1,7 +1,12 @@
-Base_path: <set path to where data lives here> #edit this to where your base path exisits
-Data_folder: "Illumina_C6" #change to relevant data path here
-Name_of_folder_one: "dehosted" #change to relevant data path here
-Name_of_folder_two: "no_dehost" #change to relevant data path here
+# === Configuration Instructions ===
+# - Set 'Base_path' to the absolute path where your data is stored.
+# - 'Data_folder' should be the name of the main directory containing your data.
+# - 'Name_of_folder_one' and 'Name_of_folder_two' should be subdirectories inside 'Data_folder'.
+
+Base_path: "/absolute/path/to/your/data"
+Data_folder: "Illumina_C6"
+Name_of_folder_one: "dehosted"
+Name_of_folder_two: "no_dehost"
 
 Packages: #packages needed to run the SIGNAL comparison script
   - dplyr
