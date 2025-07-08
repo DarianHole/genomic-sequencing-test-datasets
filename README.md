@@ -190,11 +190,19 @@ Contains a detailed comparison of per-user SIGNAL/ncov-tools output.
 ## CL Instructions
 
 ### Install
+Install using conda/mamba with `renv restore`
 
 ```bash
 conda create -n signal_compare_env -c conda-forge r-base=4.3.0 r-renv=1.0.11 r-rmarkdown=2.27 r-ggplot2=3.5.1 r-tidyverse=2.0.0 r-here=1.0.1
 conda activate signal_compare_env
 Rscript -e "renv::restore()"
+```
+
+Install using conda/mamba with `conda/mamba env create`. Not all dependencies were in conda-forge (some were only in the R channel) but running the SIGNAL script pulls the additional ones
+
+```bash
+conda env create -f environment.yml
+conda activate signal_compare_env
 ```
 
 If it fails to fully restore with `renv`, running the `SIGNAL_output_comparison_script.Rmd` script will install most of them as well
